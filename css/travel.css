@@ -1,14 +1,87 @@
 html {
     font-size: 62.5%;
 }
+main {
+    margin: 0 auto;
+}
 
 :root {
-    --color-primary: #2584ff;
-    --color-secondary: #00d9ff;
+    --color-primary: #131318;
+    --color-secondary: #FF5400;
     --color-accent: #ff3400;
     --color-headings: #1b0760;
     --color-body: #918ca4;
     --color-body-darker: #5c5577;
     --color-border: #ccc;
     --border-radius: 30px;
+    --font-primary:'Mulish', sans-serif;
+    --font-secondary:'Inter', sans-serif;
   }
+ 
+
+  /* navigation bar */
+  .navigationBar {
+    height: 64px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--font-primary);
+    font-weight: 800;
+    font-size: 2.1rem;
+  }
+  .navigationBar-left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+.navigationBar-left > img {
+    padding: 0rem 1rem 0 2rem;
+    width: 29px;
+    height: 33px;
+}
+.navigationBar-left > h2 {
+    padding: 0rem 1rem 0 2rem;
+}
+.navigationBar-left h2 span {
+    color: var(--color-secondary);
+}
+.navigationBar-right i {
+    width: 24px;
+    height: 24px;
+}
+.nav-group {
+    display: none;
+}
+
+@media screen and (min-width: 601px) {
+    .navigationBar-right .nav-icon {
+        display: none;
+    }
+    .navigationBar-right .nav-group{
+        display: flex;
+        flex-direction: row;
+    }
+    .navigationBar-right .nav-group .home {
+        color: var(--color-secondary);
+        font-weight: 700;
+    }
+    .nav-group a {
+        padding-right: 44px;
+        font-family: var(--font-primary);
+        color: var(--color-primary);
+        font-size: 1.8rem;
+        font-weight: 400;
+        text-decoration: none;
+    }
+    .navigationBar-left h2 {
+        font-size: 3.6rem;
+    }
+   
+  }
+/* first banner */
+
+
+/*font-family: 'Inter', sans-serif;
+font-family: 'Mulish', sans-serif; */
+
