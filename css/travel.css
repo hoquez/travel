@@ -251,7 +251,6 @@ main {
     display: flex;
     flex-direction: column;
     font-family: var(--font-primary);
-    width: 1170px;
   }
   .gallary--description {
     margin: 0 auto;
@@ -267,6 +266,7 @@ main {
   .gallary--description p {
     font-size: 1.4rem;
     font-weight: 400;
+    color: rgba(19, 19, 24, 0.70);
   }
   .gallary .gallary--image {
     display: flex;
@@ -282,20 +282,26 @@ main {
 
   }
   @media screen and (min-width: 601px) {
+    .gallary{
+        width: 1170px;
+    }
     .gallary .gallary--image {
         display: grid;
         grid-template-rows: 300px 300px 300px;
         grid-template-columns: 573px 573px;
         gap: 1.4rem;
         width: 1170px;
-        grid-column: 1/-1;
     }
     .gallary .gallary--image img{
         width: 555px;
         height: 290px;
         margin-bottom: 1.6rem;
         border-radius: 16px;
-    
+
+      }
+      .gallary--description h2 {
+        font-size: 4rem;
+        margin-bottom: 0;
       }
   }
 /* Last Card */
