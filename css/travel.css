@@ -206,5 +206,44 @@ main {
     }
 
 }
+
+/* First Card */
+
+.card {
+    margin: 3rem auto;
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-primary);
+    color: rgba(19, 19, 24, 0.70);
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+}
+.card .description h2 {
+    font-weight: 800;
+    font-size: 2rem;
+    color: var(--color-primary);
+}
+.card .description > p, li, p {
+    font-weight: 400;
+    font-size: 1.4rem;
+    padding: 1rem 0rem;
+}
+.btn {
+    margin-bottom: 4rem;
+}
+@media screen and (min-width: 601px) {
+    .card {
+        margin: 3rem auto;
+        display: flex;
+        flex-direction: row;
+        font-family: var(--font-primary);
+        color: rgba(19, 19, 24, 0.70);
+        width: 1170px;
+    }
+    .btn {
+        margin-top: 4rem;
+    }
+}
+
 /*font-family: 'Inter', sans-serif;
 font-family: 'Mulish', sans-serif; */
