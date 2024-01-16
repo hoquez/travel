@@ -8,7 +8,7 @@ main {
 :root {
     --color-primary: #131318;
     --color-secondary: #FF5400;
-    --color-accent: #ff3400;
+    --font-secondary-color: #FFF;
     --color-headings: #1b0760;
     --color-body: #918ca4;
     --color-body-darker: #5c5577;
@@ -18,7 +18,29 @@ main {
     --font-secondary:'Inter', sans-serif;
   }
  
-
+/* component Button */
+.btn {
+    border-radius: 8px;
+    border: 0;
+    cursor: pointer;
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin: 0;
+    outline: 0;
+    padding: 1.7rem 7.7rem;
+    text-align: center;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+  .btn--big {
+    background: var(--color-secondary);
+    color: #fff;
+    margin-top: 1.6rem;
+  }
+  .btn--secondary {
+    background: var(--color-secondary);
+    color: #fff;
+  }
   /* navigation bar */
   .navigationBar {
     height: 64px;
@@ -55,6 +77,11 @@ main {
 }
 
 @media screen and (min-width: 601px) {
+    .navigationBar{
+        width: 1170px;
+        margin: 0 auto;
+        margin-bottom: 3rem;
+    }
     .navigationBar-right .nav-icon {
         display: none;
     }
@@ -81,7 +108,103 @@ main {
   }
 /* first banner */
 
+.banner--1 {
+    background-image: url(../images/group131.png);
+    width: 335px;
+    height: 483px;
+    margin: 0 auto;
+    border-radius: 16px;
+    color: var(--font-secondary-color);
+}
+.banner--1-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-family: var(--font-primary);
 
+}
+.banner--1-content h2 {
+    font-size: 2.2rem;
+    font-weight: 800;
+    margin: 0;
+    padding-top: 3.2rem;
+
+}
+.banner--1-content p {
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin: 0;
+    padding: 1rem .5rem 3rem .5rem;
+
+}
+.search {
+    width: 287px;
+    height: 288px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.30);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.search--content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 2rem;
+}
+.search--place {
+    padding: 1.6rem 0;
+}
+.search--place input {
+    padding: 1.6rem  9.5rem 1.6rem 1.5rem;
+    border-radius: 8px;
+    border: 0;
+}
+@media screen and (min-width: 601px) {
+    .banner--1 {
+        background-image: url(../images/group13.png);
+        width: 1170px;
+        height: 500px;
+        margin: 0 auto;
+        border-radius: 16px;
+        color: var(--font-secondary-color);
+    }
+    .search--content {
+        flex-direction: row;
+        align-items: center;
+        color: rgba(19, 19, 24, 0.50);
+
+    }
+    .search {
+        width: 800px;
+        height: 84px;
+        padding-top: 0rem;   
+    }
+
+    .btn {
+        margin: 0rem 0rem 0rem 0.5rem;
+        padding: 1.7rem 3.7rem;
+    }
+    .search--place input {
+        padding: 1.6rem  0rem 1.6rem 1.2rem;
+        border-radius: 8px;
+        border: 0;
+        font-size: 1.6rem;
+        margin: 1rem;
+    }
+    .banner--1-content h2 {
+        font-size: 6.4rem;
+        margin: 4rem 0rem 1rem 0rem;
+    }
+    .banner--1-content p {
+        font-size: 1.6rem;
+    }
+    .search {
+        margin-top: 3rem;
+    }
+
+}
 /*font-family: 'Inter', sans-serif;
 font-family: 'Mulish', sans-serif; */
-
