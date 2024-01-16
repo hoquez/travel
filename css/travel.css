@@ -251,6 +251,7 @@ main {
     display: flex;
     flex-direction: column;
     font-family: var(--font-primary);
+    width: 1170px;
   }
   .gallary--description {
     margin: 0 auto;
