@@ -9,11 +9,6 @@ main {
     --color-primary: #131318;
     --color-secondary: #FF5400;
     --font-secondary-color: #FFF;
-    --color-headings: #1b0760;
-    --color-body: #918ca4;
-    --color-body-darker: #5c5577;
-    --color-border: #ccc;
-    --border-radius: 30px;
     --font-primary:'Mulish', sans-serif;
     --font-secondary:'Inter', sans-serif;
   }
@@ -151,7 +146,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-top: 2rem;
+    padding-top: 3rem;
 }
 .search--place {
     padding: 1.6rem 0;
@@ -161,6 +156,9 @@ main {
     border-radius: 8px;
     border: 0;
 }
+.btn {
+    padding: 1.7rem 6.7rem;
+  }
 @media screen and (min-width: 601px) {
     .banner--1 {
         background-image: url(../images/group13.png);
@@ -174,6 +172,7 @@ main {
         flex-direction: row;
         align-items: center;
         color: rgba(19, 19, 24, 0.50);
+        padding-top: 0;
 
     }
     .search {
@@ -184,7 +183,7 @@ main {
 
     .btn {
         margin: 0rem 0rem 0rem 0.5rem;
-        padding: 1.7rem 3.7rem;
+        padding: 1.7rem 1.7rem;
     }
     .search--place input {
         padding: 1.6rem  0rem 1.6rem 1.2rem;
@@ -216,6 +215,7 @@ main {
     color: rgba(19, 19, 24, 0.70);
     font-size: 1.6rem;
     line-height: 2.6rem;
+    padding: 1rem;
 }
 .card .description h2 {
     font-weight: 800;
